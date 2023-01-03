@@ -14,7 +14,7 @@ interface Props {
 }
 
 const SSRPost: React.FC<Props> = ({ postData, refererParams }) => {
-  console.log('refererParams : ', refererParams)
+  console.warn('refererParams : ', refererParams)
   return (
     <Layout>
       <Head>
