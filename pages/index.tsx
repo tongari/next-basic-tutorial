@@ -33,7 +33,7 @@ const Home: React.FC<Props> = ({ allPostsData }) => {
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a>{title}</a>
+                {title}
               </Link>
               <br />
               <small className={utilStyles.lightText}>
@@ -41,6 +41,16 @@ const Home: React.FC<Props> = ({ allPostsData }) => {
               </small>
             </li>
           ))}
+          <li className={utilStyles.listItem} key="ssr_1">
+            <Link href="/ssr/[id]" as={`/ssr/1`}>
+              SSR POST 1
+            </Link>
+          </li>
+          <li className={utilStyles.listItem} key="ssr_2">
+            <Link href="/ssr/[id]" as={`/ssr/2`}>
+              SSR POST 2
+            </Link>
+          </li>
         </ul>
       </section>
     </Layout>

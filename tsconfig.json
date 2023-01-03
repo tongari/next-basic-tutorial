@@ -3,8 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./*",
-      ],
+        "./*"
+      ]
     },
     "target": "es5",
     "lib": [
@@ -30,6 +30,7 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "incremental": true
   },
   "exclude": [
     "node_modules"
